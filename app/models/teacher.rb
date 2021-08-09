@@ -4,6 +4,6 @@ class Teacher < ApplicationRecord
 
     #validation
     validates_presence_of :name
-    validates_presence_of :course
+    validates_presence_of :courses
     validates_presence_of :experience
 end
