@@ -1,17 +1,40 @@
-# README
+# Online class reservation apis
 
-This application is about creating a reservation for an online courses
+This application is about creating a reservation for an online class with a teacher
+
+## Features
 
 This App has the following features:
 
-- User can create account/Log in
+- User can create an account
+- User can signin
+- User can view all available teachers
+- User can view a specific teacher informations
+- User can reserve an online class with a teacher
+- User can update a reservation
+- User can delete a reservation
+- User can view all his/her reservations
+
+## Available APIs
+
+| /api/v1/users| POST | signup |
+| /api/v1/authentications | POST | signin|
+| /api/v1/teachers/ | GET | Getting all available teachers |
+| /api/v1/teachers/:teacher_id| GET |Get a specific teacher informations |
+| /api/v1/reservations/| POST | Posting a new reservation |
+| /api/v1/reservations/:reservation_id| GET | Getting a specific reservation by using and ID|
+| /api/v1/reservations/| GET | Get all reservations|
+| /api/v1/reservations/:reservation_id| GET | Get all available reservations |
+| /api/v1/reservations/:reservation_id| PUT | UPDATE a specific reservations by ID |
+| /api/v1/reservations/:reservation_id| DELETE| DELETE a specific reservation by ID |
 
 
 ## Built With
 
 - Ruby v3.0.2
 - Rails v6.1.4
-- Rspec
+- PostgreSQL
+- Bcrypt
 - JWT
 
 ## Live Demo
