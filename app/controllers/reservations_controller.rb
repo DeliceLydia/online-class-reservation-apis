@@ -34,6 +34,6 @@ class ReservationsController < ApplicationController
   end
 
   def set_reservation
-    @reservation= current_user.reservations.find_by(id: params[:id])
+    @reservation = current_user.reservations.find_by(id: params[:id])
   end
 end

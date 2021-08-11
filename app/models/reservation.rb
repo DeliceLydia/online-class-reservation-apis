@@ -2,7 +2,7 @@ class Reservation < ApplicationRecord
   belongs_to :teacher
   belongs_to :user
 
-  #validation
+  # validation
 
   validates_presence_of :reservation_date
 end
