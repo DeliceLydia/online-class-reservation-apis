@@ -62,11 +62,6 @@ To get this project set up on your local machine, follow these simple steps:
 8. Start your server ``` rails server ```
 9. Run the app ``` http://localhost:3000/ ```
 
-## Run tests
-
-```
-  rspec --format documentation
-```
 ## Contributing
 
 Contributions, issues, and feature requests are welcome!
