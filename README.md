@@ -17,6 +17,8 @@ This App has the following features:
 
 ## Available APIs
 
+| Ressource URL | Methods  | Description  |
+| ------- | --- | --- |
 | /api/v1/users| POST | signup |
 | /api/v1/authentications | POST | signin|
 | /api/v1/teachers/ | GET | Getting all available teachers |
