@@ -19,16 +19,15 @@ This App has the following features:
 
 | Ressource URL | Methods  | Description  |
 | ------- | --- | --- |
-| /api/v1/users| POST | signup |
-| /api/v1/authentications | POST | signin|
-| /api/v1/teachers/ | GET | Getting all available teachers |
+| /api/v1/users| POST | Signup a new user |
+| /api/v1/authentications | POST | Sign in a current user|
+| /api/v1/teachers/ | GET | Get all available teachers |
 | /api/v1/teachers/:teacher_id| GET |Get a specific teacher informations |
-| /api/v1/reservations/| POST | Posting a new reservation |
-| /api/v1/reservations/:reservation_id| GET | Getting a specific reservation by using and ID|
-| /api/v1/reservations/| GET | Get all reservations|
+| /api/v1/reservations/| POST | Post a new reservation |
 | /api/v1/reservations/:reservation_id| GET | Get all available reservations |
-| /api/v1/reservations/:reservation_id| PUT | UPDATE a specific reservations by ID |
-| /api/v1/reservations/:reservation_id| DELETE| DELETE a specific reservation by ID |
+| /api/v1/reservations/:reservation_id| GET | Get a specific reservation by using and ID|
+| /api/v1/reservations/:reservation_id| PUT | Update a specific reservations by ID |
+| /api/v1/reservations/:reservation_id| DELETE| Delete a specific reservation by ID |
 
 
 ## Built With
