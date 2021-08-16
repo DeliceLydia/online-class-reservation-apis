@@ -40,7 +40,7 @@ This App has the following features:
 
 ## Live Demo
 
-[Link-here](https://group-hours.herokuapp.com)
+[Link-here](https://lydia-online-class-app.herokuapp.com)
 
 ## Getting Started
 
