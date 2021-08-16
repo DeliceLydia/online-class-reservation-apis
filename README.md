@@ -66,7 +66,6 @@ To get this project set up on your local machine, follow these simple steps:
 
 ```
   rspec --format documentation
-
 ```
 ## Contributing
 
