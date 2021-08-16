@@ -67,6 +67,11 @@ To get this project set up on your local machine, follow these simple steps:
 ```
   rspec --format documentation
 ```
+
+## APIs Documentation
+
+Check out here [Postman](https://documenter.getpostman.com/view/6368898/Tzz8sH4c) Documentation
+
 ## Contributing
 
 Contributions, issues, and feature requests are welcome!
