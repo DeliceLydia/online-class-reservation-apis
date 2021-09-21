@@ -13,7 +13,7 @@ RSpec.describe Teacher, type: :model do
     end
 
     it 'should not be valid without name' do
-      teacher = Teacher.new(courses: 'ruby',experience: '7years')
+      teacher = Teacher.new(courses: 'ruby', experience: '7years')
       expect(teacher).to_not be_valid
     end
 
