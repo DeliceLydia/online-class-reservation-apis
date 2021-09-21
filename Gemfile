@@ -9,15 +9,9 @@ gem 'rack-cors'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.1.4'
-group :development, :test do
-  gem 'sqlite3'
-  end 
 
 # Use postgresql as the database for Active Record
-group :production do
-  gem 'pg'
-  gem 'rails_12factor'
-  end 
+gem 'pg', '~> 1.1'
 # Use Puma as the app server
 gem 'puma', '~> 5.0'
 # Use SCSS for stylesheets
