@@ -1,5 +1,6 @@
 class AuthenticateUser
-  def initialize(email, password)
+  def initialize(name, email, password)
+    @name = name
     @email = email
     @password = password
   end
