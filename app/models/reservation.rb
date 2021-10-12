@@ -4,5 +4,5 @@ class Reservation < ApplicationRecord
 
   # validation
 
-  validates_presence_of :reservation_date
+  # validates_presence_of :reservation_date
 end

@@ -30,7 +30,7 @@ class ReservationsController < ApplicationController
   private
 
   def reservation_params
-    params.permit(:reservation_date, :teacher_id, :user_id)
+    params.permit(:teacher_id, :user_id)
   end
 
   def set_reservation
