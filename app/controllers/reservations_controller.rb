@@ -1,5 +1,4 @@
 class ReservationsController < ApplicationController
-
   def index
     @reservations = current_user.reservations
     json_response(@reservations)
@@ -39,7 +38,6 @@ class ReservationsController < ApplicationController
       render json: reservation, status: 200
     end
   end
-
 
   def update
     @reservation = Reservation.find(params[:id])

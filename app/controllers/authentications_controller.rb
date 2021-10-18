@@ -3,9 +3,9 @@ class AuthenticationsController < ApplicationController
 
   def create
     user = User.find_by(email: params[:email])
-    authToken =
+    auth_token =
       AuthenticateUser.new(auth_params[:email], auth_params[:password]).call
-      render json: { email: user.email, authToken: authToken }
+    render json: { email: user.email, authToken: auth_token }
   end
 
   private
