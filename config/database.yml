@@ -17,21 +17,19 @@
 default: &default
   adapter: postgresql
   encoding: unicode
-  host: ''
-  password: 'ingabire'
   # For details on connection pooling, see Rails configuration guide
   # https://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 
 development:
   <<: *default
-  database: online_class_reservation_development
+  database: online_class_reservation_apis_development
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
   # When left blank, postgres will use the default role. This is
   # the same name as the operating system user running Rails.
-  #username: techBook_app
+  #username: online_class_reservation_apis
 
   # The password associated with the postgres role (username).
   #password:
@@ -59,7 +57,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: online_class_reservation
+  database: online_class_reservation_apis_test
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -83,6 +81,6 @@ test:
 #
 production:
   <<: *default
-  database: online_class_reservation_production
-  username: online_class_reservation
-  password: <%= ENV['ONLINE_CLASS_RESERVATION_DATABASE_PASSWORD'] %>
+  database: online_class_reservation_apis_production
+  username: online_class_reservation_apis
+  password: <%= ENV['ONLINE_CLASS_RESERVATION_APIS_DATABASE_PASSWORD'] %>
