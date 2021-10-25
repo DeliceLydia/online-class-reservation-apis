@@ -11,8 +11,6 @@ This App has the following features:
 - User can view all available teachers
 - User can view a specific teacher informations
 - User can reserve an online class with a teacher
-- User can update a reservation
-- User can delete a reservation
 - User can view all his/her reservations
 
 ## Available APIs
@@ -24,10 +22,7 @@ This App has the following features:
 | /api/v1/teachers/ | GET | Get all available teachers |
 | /api/v1/teachers/:teacher_id| GET |Get a specific teacher informations |
 | /api/v1/reservations/| POST | Post a new reservation |
-| /api/v1/reservations/:reservation_id| GET | Get all available reservations |
-| /api/v1/reservations/:reservation_id| GET | Get a specific reservation by using and ID|
-| /api/v1/reservations/:reservation_id| PUT | Update a specific reservations by ID |
-| /api/v1/reservations/:reservation_id| DELETE| Delete a specific reservation by ID |
+| /api/v1/reservations| GET | Get all available reservations |
 
 
 ## Built With
