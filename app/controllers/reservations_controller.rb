@@ -14,7 +14,7 @@ class ReservationsController < ApplicationController
         reservation = user.reservations.build(reservation_params)
         teacher = Teacher.find_by(id: reservation_params[:teacher_id])
         if teacher.nil?
-          render json: { message: "house not found with ID #{reservation_params[:teacher_id]}" },
+          render json: { message: "teacher not found with ID #{reservation_params[:teacher_id]}" },
                  status: 404
         elsif reservation.save
           render json: { id: reservation.id, user_id: reservation.user_id, teacher: reservation.teacher }, status: 200
@@ -22,7 +22,7 @@ class ReservationsController < ApplicationController
           render json: { message: reservation.errors.full_messages[0] }, status: 400
         end
       else
-        render json: { message: 'rent already exists' }, status: 400
+        render json: { message: 'reservation already exists' }, status: 400
       end
     end
   end
