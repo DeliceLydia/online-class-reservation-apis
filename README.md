@@ -54,8 +54,9 @@ To get this project set up on your local machine, follow these simple steps:
 6. Install webpacker by running 
 ``` bundle exec rails webpacker:install ```
 7. Run database migration by running ``` rails db:migrate ```
-8. Start your server ``` rails server ```
-9. Run the app ``` http://localhost:3000/ ```
+8. Seed the database by running ``` rails db:seed ```
+9. Start your server ``` rails server ```
+10. Run the app ``` http://localhost:3000/ ```
 
 ## Run tests
 
