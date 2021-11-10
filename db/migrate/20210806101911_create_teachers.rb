@@ -5,7 +5,6 @@ class CreateTeachers < ActiveRecord::Migration[6.1]
       t.string :courses
       t.string :experience
 
-      t.timestamps
     end
   end
 end

@@ -17,8 +17,8 @@ RSpec.describe Teacher, type: :model do
       expect(teacher).to_not be_valid
     end
 
-    it 'should be valid if provided all attributes' do
-      teacher = Teacher.new(name: 'josiane', courses: 'ruby', experience: '7years')
+    it 'should be valid when provided all attributes' do
+      teacher = Teacher.create(name: 'john doe', courses: 'Poetry', experience: '7yrs', image: 'https://image.freepik.com/free-photo/senior-male-p…aining-writing-green-chalkboard_23-2148200956.jpg')
       expect(teacher).to be_valid
     end
   end
