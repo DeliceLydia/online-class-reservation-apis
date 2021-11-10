@@ -22,7 +22,7 @@ RSpec.describe 'Signup', type: :feature do
   end
 
   it 'should not save the user without a valid password' do
-    user = User.new(name: 'cool', email: 'cool@gmail.com', password: '123456')
+    user = User.new(name: 'cool', email: 'cool@gmail.com', password: '12')
     expect(user.save).to be(false)
   end
 
