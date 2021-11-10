@@ -6,4 +6,5 @@ class Teacher < ApplicationRecord
   validates_presence_of :name
   validates_presence_of :courses
   validates_presence_of :experience
+  validates_presence_of :image
 end
