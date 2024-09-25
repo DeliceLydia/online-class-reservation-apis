@@ -2,7 +2,8 @@
 default: &default
   adapter: postgresql
   encoding: unicode
-  host: localhost
+  host: 127.0.0.1
+  port: 5432
   password: 'ingabire'
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 
@@ -18,5 +19,6 @@ test:
 production:
   <<: *default
   database: online_class_reservation_production
-  username: online_class_reservation
-  password: <%= ENV['ONLINE_CLASS_RESERVATION_DATABASE_PASSWORD'] %>
+  username: <%= ENV['DB_USERNAME'] %>
+  password: <%= ENV['DB_PASSWORD'] %>
+  host: <%= ENV['DB_HOST'] || '127.0.0.1' %>
