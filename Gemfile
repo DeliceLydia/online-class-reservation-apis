@@ -5,8 +5,10 @@ ruby '3.3.5'
 
 gem 'rubocop', '>= 1.0', '< 2.0'
 gem 'rack-cors'
-gem 'rails', '~> 6.1.4'
-
+gem 'rails', '6.1.7.8'
+gem 'logger'
+gem 'mutex_m'
+gem 'bigdecimal'
 gem 'pg', '~> 1.1'
 gem 'puma', '~> 5.0'
 gem 'sass-rails', '>= 6'
@@ -16,6 +18,7 @@ gem 'jbuilder', '~> 2.7'
 
 gem 'bcrypt', '~> 3.1.7'
 gem 'jwt'
+
 gem 'bootsnap', '>= 1.4.4', require: false
 
 group :development, :test do
