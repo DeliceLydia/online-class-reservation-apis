@@ -2,7 +2,7 @@ databases:
   - name: online_class_reservation_development
     databaseName: online_class_reservation_development
     user: lydia
-
+    plan: free
 
 services:
   - type: web
@@ -14,7 +14,7 @@ services:
     envVars:
       - key: DATABASE_URL
         fromDatabase:
-          name: mysite
+          name: online_class_reservation_development
           property: connectionString
       - key: RAILS_MASTER_KEY
         sync: false
