@@ -1,24 +1,20 @@
-
 default: &default
   adapter: postgresql
   encoding: unicode
-  host: 127.0.0.1
+  host: <%= ENV['DB_HOST'] %>
   port: 5432
-  password: 'ingabire'
+  username: <%= ENV['DB_USERNAME'] %> 
+  password: <%= ENV['DB_PASSWORD'] %>
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
 
 development:
   <<: *default
   database: online_class_reservation_development
-  
 
 test:
   <<: *default
-  database: online_class_reservation
+  database: online_class_reservation_test
 
 production:
   <<: *default
-  database: online_class_reservation_production
-  username: <%= ENV['DB_USERNAME'] %>
-  password: <%= ENV['DB_PASSWORD'] %>
-  host: <%= ENV['DB_HOST'] || '127.0.0.1' %>
+  database: <%= ENV['DB_NAME'] %>
